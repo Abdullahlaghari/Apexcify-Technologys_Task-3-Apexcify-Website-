@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Apexcify Technologys — Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <!-- Using your uploaded file as the logo -->
+      <a class="logo" href="#">
+        <img src="images/pic1.jpg" alt="Apexcify Logo" />
+        <span>Apexcify Technologys</span>
+      </a>
+
+      <nav class="nav">
+        <button class="nav-btn" id="prevSection">Prev</button>
+        <a href="#about">About</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+        <button class="nav-btn" id="nextSection">Next</button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="hero" class="hero">
+      <div class="container">
+        <h1>We build smart digital products</h1>
+        <p>Creative web & mobile solutions with modern UX and reliable engineering.</p>
+        <a class="cta" href="#portfolio">See Our Work</a>
+      </div>
+    </section>
+
+    <section id="about" class="about container">
+      <h2>About Apexcify</h2>
+      <p>
+        Apexcify Technologys is focused on building scalable web applications,
+        UI/UX-driven products, and automated solutions for modern businesses.
+      </p>
+    </section>
+
+    <!-- Portfolio / Projects -->
+    <section id="portfolio" class="portfolio container">
+      <h2>Our Projects</h2>
+
+      <!-- Filters -->
+      <div class="filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="web">Web</button>
+        <button class="filter-btn" data-filter="mobile">Mobile</button>
+        <button class="filter-btn" data-filter="iot">IoT</button>
+      </div>
+
+      <div class="projects-grid" id="projectsGrid">
+        <!-- Project 1 -->
+        <article class="project-card" data-category="web" tabindex="0">
+          <div class="thumb">
+            <img src="images/pic2.jpg" alt="Resume Builder" />
+            <div class="overlay">
+              <button class="view-btn" data-index="0">View</button>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>Resume Builder Web App</h3>
+            <p>Editable templates, live preview, export to PDF/Word.</p>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project-card" data-category="web" tabindex="0">
+          <div class="thumb">
+            <img src="images/pic3.png" alt="Chat App" />
+            <div class="overlay">
+              <button class="view-btn" data-index="1">View</button>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>Chat Application (Real-Time)</h3>
+            <p>Realtime messaging with presence & emoji support.</p>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="project-card" data-category="mobile" tabindex="0">
+          <div class="thumb">
+            <img src="images/pic4.jpg" alt="Fintech App" />
+            <div class="overlay">
+              <button class="view-btn" data-index="2">View</button>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>Fintech Mobile App</h3>
+            <p>Secure payments, charts and analytics for users.</p>
+          </div>
+        </article>
+
+        <!-- Project 4 - IoT / Smart Home -->
+        <article class="project-card" data-category="iot" tabindex="0">
+          <div class="thumb">
+            <img src="images/pic5.jpg" alt="Smart Home" />
+            <div class="overlay">
+              <button class="view-btn" data-index="3">View</button>
+            </div>
+          </div>
+          <div class="project-info">
+            <h3>Smart Home Automation</h3>
+            <p>Arduino + sensors to automate lights, water, and security.</p>
+          </div>
+        </article>
+
+        <!-- Add more project-cards as needed -->
+      </div>
+    </section>
+
+    <section id="contact" class="contact container">
+      <h2>Contact Us</h2>
+      <p>Reach out for collaborations or project inquiries.</p>
+      <a class="cta" href="https://apexifytechnologies.com/">hello@apexcify.com</a>
+    </section>
+  </main>
+
+  <!-- Lightbox Modal -->
+  <div id="lightbox" class="lightbox" aria-hidden="true">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close">&times;</button>
+    <button class="lightbox-nav prev" id="lbPrev" aria-label="Previous">&#10094;</button>
+    <div class="lightbox-content" id="lightboxContent">
+      <!-- dynamic content injected by JS -->
+    </div>
+    <button class="lightbox-nav next" id="lbNext" aria-label="Next">&#10095;</button>
+  </div>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Apexcify Technologys. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
